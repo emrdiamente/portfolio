@@ -48,30 +48,42 @@
   .nav-cta { font-size:10px; letter-spacing:0.18em; text-transform:uppercase; text-decoration:none; color:var(--charcoal); border-bottom:1px solid var(--charcoal); padding-bottom:2px; transition:color .25s,border-color .25s; }
   .nav-cta:hover { color:var(--accent); border-color:var(--accent); }
 
-  /* HERO */
-  .hero { min-height:100vh; display:grid; grid-template-columns:55% 45%; border-bottom:1px solid var(--border); }
-  .hero-left { padding:190px 72px 96px 52px; border-right:1px solid var(--border); display:flex; flex-direction:column; justify-content:flex-end; opacity:0; animation:fadeUp 1s ease forwards .15s; }
-  .hero-eyebrow { font-family:var(--font-mono); font-size:9.5px; letter-spacing:0.22em; text-transform:uppercase; color:var(--stone); margin-bottom:36px; display:flex; align-items:center; gap:16px; }
-  .hero-eyebrow::before { content:''; display:block; width:28px; height:1px; background:var(--accent); }
-  .hero-title { font-family:var(--font-serif); font-size:clamp(56px,6.2vw,90px); font-weight:300; line-height:1.0; letter-spacing:-0.01em; margin-bottom:44px; }
-  .hero-title em { font-style:italic; color:var(--accent); }
-  .hero-intro { font-size:14px; color:var(--stone); line-height:1.95; max-width:400px; margin-bottom:56px; letter-spacing:0.01em; }
-  .hero-intro strong { color:var(--charcoal); font-weight:400; }
-  .hero-actions { display:flex; gap:22px; align-items:center; }
-  .btn-primary { display:inline-flex; align-items:center; gap:14px; font-size:10px; letter-spacing:0.18em; text-transform:uppercase; text-decoration:none; color:var(--warm-white); background:var(--charcoal); padding:16px 32px; transition:background .3s; }
-  .btn-primary:hover { background:var(--accent); }
-  .btn-secondary { display:inline-flex; align-items:center; gap:10px; font-size:10px; letter-spacing:0.18em; text-transform:uppercase; text-decoration:none; color:var(--stone); border-bottom:1px solid var(--border); padding-bottom:2px; transition:color .25s,border-color .25s; }
-  .btn-secondary:hover { color:var(--charcoal); border-color:var(--charcoal); }
-  .hero-right { position:relative; opacity:0; animation:fadeIn 1.2s ease forwards .4s; overflow:hidden; background:#e8e3da; }
-  .hero-portrait { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; }
-  .hero-portrait img { width:72%; height:auto; object-fit:contain; object-position:center center; display:block; filter:grayscale(100%) contrast(1.04); position:relative; z-index:1; margin-bottom:120px; }
-  .hero-portrait-overlay { position:absolute; inset:0; background:linear-gradient(to top,rgba(30,28,24,.55) 0%,transparent 45%); z-index:2; }
-  .hero-card { position:absolute; bottom:0; left:0; right:0; z-index:3; background:rgba(244,239,230,0.93); backdrop-filter:blur(10px); border-top:1px solid var(--border); padding:26px 36px; display:grid; grid-template-columns:repeat(3,1fr); }
-  .hero-stat { border-right:1px solid var(--border); padding-right:20px; margin-right:20px; }
-  .hero-stat:last-child { border-right:none; margin-right:0; }
-  .stat-n { font-family:var(--font-serif); font-size:36px; font-weight:300; line-height:1; }
-  .stat-n span { font-size:22px; color:var(--accent); }
-  .stat-l { font-family:var(--font-mono); font-size:8.5px; letter-spacing:0.16em; text-transform:uppercase; color:var(--stone); margin-top:6px; }
+<!-- HERO -->
+<div class="hero" id="home">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Indianapolis, IN</div>
+    <h1 class="hero-title">
+      Real Estate<br>Marketing Professional
+    </h1>
+    <p class="hero-intro">
+      Marketing across 35+ assets inside one of the oldest privately held real estate companies in the country. Trained at Indiana University to understand how organizations work. Spent the years since finding out.
+    </p>
+    <div class="hero-actions">
+      <a href="#work" class="btn-primary">View Work →</a>
+      <a href="#contact" class="btn-secondary">Contact</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-portrait">
+      <img src="profile.png" alt="Profile photo">
+      <div class="hero-portrait-overlay"></div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-stat">
+        <div class="stat-n">35<span>+</span></div>
+        <div class="stat-l">Assets under<br>portfolio strategy</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-n">30</div>
+        <div class="stat-l">Websites launched<br>across portfolio</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-n">Est<span style="font-size:16px">1921</span></div>
+        <div class="stat-l">Edward Rose<br>& Sons</div>
+      </div>
+    </div>
+  </div>
+</div>
 
   /* MARQUEE */
   .marquee-wrap { overflow:hidden; border-bottom:1px solid var(--border); background:var(--parchment); padding:15px 0; }

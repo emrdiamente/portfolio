@@ -32,12 +32,13 @@
     overflow-x: hidden; cursor: none;
   }
 
-  /* CURSOR */
+/* CURSOR */
+@media (pointer: fine) {
   .cursor { width:7px; height:7px; background:var(--charcoal); border-radius:50%; position:fixed; top:0; left:0; pointer-events:none; z-index:9999; transform:translate(-50%,-50%); transition:width .25s,height .25s; }
   .cursor-ring { width:28px; height:28px; border:1px solid rgba(30,28,24,.3); border-radius:50%; position:fixed; top:0; left:0; pointer-events:none; z-index:9998; transform:translate(-50%,-50%); transition:width .3s,height .3s,border-color .3s; }
   .cursor.hover { width:12px; height:12px; background:var(--accent); }
   .cursor-ring.hover { width:44px; height:44px; border-color:var(--accent); }
-
+}
   /* NAV */
   nav { position:fixed; top:0; left:0; right:0; z-index:200; padding:30px 52px; display:flex; align-items:center; justify-content:space-between; background:linear-gradient(to bottom,var(--warm-white) 60%,transparent); }
   .nav-logo { font-family:var(--font-serif); font-size:17px; font-weight:400; letter-spacing:0.06em; text-decoration:none; color:var(--charcoal); }

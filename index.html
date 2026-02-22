@@ -656,7 +656,7 @@ const ctx = canvas.getContext('2d');
 
 // Responsive sizing
 function setCanvasSize(){
-  const maxW = Math.min(window.innerWidth - 104, 1000);
+  const maxW = canvas.parentElement.offsetWidth;
   const H = Math.round(maxW * 0.56);
   canvas.style.width = maxW + 'px';
   canvas.style.height = H + 'px';

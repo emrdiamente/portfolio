@@ -200,7 +200,20 @@
   .ptag { font-family:var(--font-mono); font-size:8.5px; letter-spacing:0.12em; text-transform:uppercase; color:var(--stone); padding:7px 0; border-top:1px solid var(--border); }
   .ptag:last-child { border-bottom:1px solid var(--border); }
 
- /* AWARDS */
+/* MORE ABOUT ME */
+.about-strip { display:grid; grid-template-columns:1fr 1fr; border-bottom:1px solid var(--border); }
+.about-text { padding:72px 52px; display:flex; flex-direction:column; justify-content:center; gap:20px; border-right:1px solid var(--border); }
+.about-label { font-family:var(--font-mono); font-size:9px; letter-spacing:0.22em; text-transform:uppercase; color:var(--stone); margin-bottom:8px; }
+.about-body { font-size:14px; color:var(--stone); line-height:1.95; letter-spacing:0.01em; }
+.about-img { min-height:480px; overflow:hidden; background:var(--parchment); }
+
+@media (max-width: 768px) {
+  .about-strip { grid-template-columns:1fr; }
+  .about-text { padding:52px 24px; border-right:none; border-bottom:1px solid var(--border); }
+  .about-img { min-height:360px; }
+}
+  
+  /* AWARDS */
 .awards-strip { background:var(--parchment); padding:52px 52px; display:grid; grid-template-columns:1fr 1fr 1fr; }
 .award-item { padding:0 44px; border-right:1px solid var(--border); }
 .award-item:first-child { padding-left:0; }
@@ -554,6 +567,19 @@ I am a real estate marketing specialist currently working at Edward Rose & Sons,
 
   </div>
 </section>
+
+<!-- MORE ABOUT ME -->
+<div class="about-strip reveal">
+  <div class="about-text">
+    <div class="about-label">Beyond the Work</div>
+    <p class="about-body">I am drawn to the built environment and the psychology behind it. I pay attention to how light, proportion, and material shape perception — and how positioning can change the way a place is understood. Real estate, to me, is both physical and narrative. It lives in site plans and in story.</p>
+    <p class="about-body">That interest shows up in my work. I think carefully about context, audience, and experience, and I approach marketing as an extension of development itself: shaping how a space is introduced, interpreted, and ultimately valued.</p>
+    <p class="about-body">Outside of work, I have competed as a swimmer my entire life — a discipline that has shaped how I think about consistency, precision, and performance under pressure.</p>
+  </div>
+  <div class="about-img">
+    <img src="PLACEHOLDER_BOB_THE_BUILDER" alt="Evan with Bob the Builder" style="width:100%; height:100%; object-fit:cover; display:block;">
+  </div>
+</div>
   
 <!-- Highlights -->
 <div class="awards-strip reveal">

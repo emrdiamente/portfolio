@@ -269,7 +269,7 @@
   
   /* CONTACT */
   .contact-layout { display:grid; grid-template-columns:1fr 1fr; }
-.contact-left { padding:40px 64px 80px 52px; border-right:1px solid var(--border); }
+.contact-left { padding:52px 64px 80px 52px; border-right:1px solid var(--border); display:flex; flex-direction:column; justify-content:center; }
   .contact-left h2 { font-family:var(--font-serif); font-size:clamp(40px,5vw,68px); font-weight:300; line-height:1.05; margin-bottom:24px; }
   .contact-left h2 em { font-style:italic; color:var(--accent); }
   .contact-left p { font-size:13px; color:var(--stone); line-height:1.9; max-width:300px; letter-spacing:0.01em; }
@@ -1056,17 +1056,12 @@ window.addEventListener('resize',()=>{setCanvasSize();renderScene();});
 
 <!-- CONTACT -->
 <section id="contact">
-  <div class="sec-head">
-    <div>
+  <div class="contact-layout">
+    <div class="contact-left">
       <div class="sec-num">04</div>
       <div class="sec-tag">Contact</div>
+      <h2 class="sec-title" style="margin-top:24px;">Let's <em>build</em><br>a connection.</h2>
     </div>
-    <div>
-      <h2 class="sec-title">Let's <em>build</em><br>a connection.</h2>
-    </div>
-  </div>
-  <div class="contact-layout">
-    <div class="contact-left"></div>
     <div class="contact-right">
       <a class="contact-item" href="mailto:emrdiamente@gmail.com">
         <span class="ci-label">emrdiamente@gmail.com</span>

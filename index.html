@@ -180,8 +180,10 @@
   .site-info { padding:24px 28px 28px; }
   .site-name { font-family:var(--font-serif); font-size:20px; font-weight:400; margin-bottom:4px; }
   .site-url { font-family:var(--font-mono); font-size:9px; letter-spacing:0.14em; color:var(--stone-light); text-transform:lowercase; }
-  .iframe-live-btn-wrap { position:absolute; bottom:16px; left:50%; transform:translateX(-50%); z-index:3; }
-
+.iframe-live-btn-wrap { position:absolute; bottom:16px; left:50%; transform:translateX(-50%); z-index:3; }
+.iframe-live-btn-wrap .iframe-live-btn { opacity:1; transform:translateY(0); font-family:var(--font-mono); font-size:8.5px; letter-spacing:0.18em; text-transform:uppercase; color:white; background:rgba(0,0,0,.65); padding:8px 16px; backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,.2); text-decoration:none; display:inline-block; }
+.iframe-live-btn-wrap .iframe-live-btn:hover { background:rgba(0,0,0,.85); }
+  
   /* SCOPE — stripped down */
   .scope-strip { padding:64px 52px; display:grid; grid-template-columns:repeat(4,1fr); gap:2px; }
   .scope-cell { background:var(--cream); padding:32px 28px 28px; border:1px solid var(--border); }
